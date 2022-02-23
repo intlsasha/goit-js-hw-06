@@ -3,7 +3,7 @@ const textInput = document.querySelector("#validation-input");
 textInput.addEventListener("change", onFocusChange);
 
 function onFocusChange(e) {
-  if (e.target.value.length === +textInput.dataset.length) {
+  if (e.target.value.length === Number(textInput.dataset.length)) {
     textInput.classList.add("valid");
     textInput.classList.remove("invalid");
   } else {
