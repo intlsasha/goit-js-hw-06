@@ -5,5 +5,5 @@ inputText.addEventListener("input", onEnterInput);
 
 function onEnterInput(e) {
   inputText = e.currentTarget.value;
-  inputText !== " " ? (outputName.innerText = inputName.trim()) : "Anonymous";
+  inputText !== " " ? (outputText.innerText = inputText.trim()) : "Anonymous";
 }
